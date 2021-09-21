@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>1-array</title>
+<meta  charset="utf-8"/>
+</head>
+<body>
+<script language="JavaScript">
+<!--
+
+//const persons = Array.of('jhon', 'Cris', 'Jenny')
+//console.log(persons);
+
+//const numbersAndStrings = Array.of(1, 2, 'strings', 'texto');
+//console.log(numbersAndStrings);
+
+//const arrWith3Positons = Array(3)
+//console.log(arrWith3Positons);
+
+//const personsList = Array('John', 'Cris', 'Jenny')
+//console.log(personsList);
+
+//const divs = document.querySelectorAll('div')
+//console.log(divs);
+
+
+const frutas = ['melancia', 'banana'];
+frutas.push('laranja'); /* adiciona no final */
+console.log(frutas);
+frutas.pop()  /* remove no final */
+console.log(frutas);
+frutas.unshift('laranja'); /* adiciona no início */
+console.log(frutas);
+frutas.shift() /* remove no início */
+console.log(frutas);
+
+const salgados = ['coxinha', 'kibe', 'empada']
+const alimentos = frutas.concat(salgados);
+console.log(alimentos);
+
+frutas.splice(1, 0, 'acerola') /* splice adiciona item removendo outro ou não, depende do segundo número */
+console.log(frutas);
+
+frutas.splice(2, 1, 'laranja', 'amora') /* exemplo removendop porque o segundo número não é 0 */
+console.log(frutas);
+
+frutas.forEach(fruta => console.log(fruta))
+
+frutas.forEach((fruta, index) => console.log(index, fruta))
+
+frutas.forEach((fruta, index, arr) => console.log(index, fruta, arr))
+
+frutas.map((fruta, index) => '${index} - ${fruta}')
+console.log(frutas);
+
+//const idades = [20, 34, [35, 60, [70, 40]]];
+//console.log(idades);
+//idades.flat(2)
+//console.log(idades);
+
+const frutasInterator = frutas.entries()
+frutasInterator.next()
+console.log(frutasInterator);
+
+
+const students = [
+    {name: 'John', grade: 7};
+    {name: 'Jenny', grade: 5};
+    {name: 'Peter', grade: 4};
+]
+console.log(students);
+
+students.some(student => student.grade >= 7);
+console.log(students); 
+
+//-->
+</script>
+</body>
+</html>
